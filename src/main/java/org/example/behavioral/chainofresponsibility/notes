@@ -1,0 +1,20 @@
+   Chain Of Responsibility Design Pattern
+   --------------------------------------------------------------
+ * Birden fazla nesneye isteği işleme şansı vererek bir istekte bulunanın göndericisini alıcısına bağlamaktan kaçının.
+Alıcı nesneleri zincirleyin ve bir nesne tarafından ele alınana kadar isteği zincir boyunca geçirin.
+(Design Patterns: Elements of Reusable Object-Oriented Software - book)
+
+# Uygulamalarda her zaman bir istek başlatan bir istemci ve onu işleyen bir uygulama nesnesi vardır.
+Chain Of Responsibility prensibi bu mekanizmayı iyileştirmek adına ortaya çıkmıştır.
+# Bir işleyici nesnesi bir isteği işleyemezse, isteği zincirdeki bir sonraki nesneye iletir.
+Zincirin sonunda, istek için varsayılan davranışı uygulayan bir veya daha fazla genel işleyici nesnesi olacaktır.
+
+# Uc yapidan olusur;
+1- Handler: İsteği işlemek için arabirim görevi gören soyut temel sınıf.
+Handler zincir bağlantılarını uygular.
+
+2- ConcreteHandler: İstekleri işler, aksi takdirde işleyici zincirinin bir sonraki buğumuna iletir.
+
+3- Client: İşleyici zincirinden birinin (ConcreteHandler) işlemesi için bir istek başlatır.
+
+
