@@ -1,0 +1,15 @@
+Strategy Design Pattern
+-------------------------------------
+
+ * Yazılımızda birden çok algoritmaya sahip olduğumuzda ve uygulamamızda yüksek birliktelik(High Cohesion)
+ve gevşek bağlılık(Low Coupling) sağlamak için bunları çalışma zamanında dinamik olarak değiştirilebilen
+bağımsız nesneler olarak işlemek istediğimizde bu kalıbı kullanabiliriz.
+
+# Yapısı
+1- Strategy: Desteklenen algoritmaya özgü tüm sınıflar için ortak bir soyutlama mekanizmasıdır.
+
+2- Concrete Strategy: Strateji soyutlamasını kullanarak algoritmayı uygulayan somut sınıflardır.
+
+3- Context : Bağlam, bir Strategy nesnesini gösterir ve bir ConcreteStrategy nesnesi olan
+istemciler tarafından başlatılır ve örneği oluşturulur.
+
