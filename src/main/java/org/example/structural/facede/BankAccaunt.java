@@ -13,7 +13,7 @@ public class BankAccaunt {
             System.out.println("Sipariş için para gönderildi. Hesap bilgileri doğrulandı");
         }
         else {
-            throw new RuntimeException("Bakiye yetersiz !!");
+            throw new UnsupportedOperationException("Bakiye yetersiz !!");
         }
     }
 }

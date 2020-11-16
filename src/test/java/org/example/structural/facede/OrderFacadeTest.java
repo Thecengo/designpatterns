@@ -10,6 +10,6 @@ class OrderFacadeTest {
     void siparisVerilebilmeli() {
         OrderFacade orderFacade = new OrderFacade();
         orderFacade.orderGenerate(new Order("order1", 12.10, 1));
-        assertDoesNotThrow(() -> new RuntimeException("Bakiye yetersiz !!"));
+        assertDoesNotThrow(() -> new UnsupportedOperationException("Bakiye yetersiz !!"));
     }
 }
