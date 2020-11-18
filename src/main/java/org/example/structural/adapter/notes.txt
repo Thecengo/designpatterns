@@ -1,0 +1,6 @@
+Eski yapıların korunabilmesi ve yeni yapılarla kolayca entegre edilebilmesi için kullanılan tasarım desenidir.
+
+# CoffeeMachineAdapter: client için kullandırılacak metotları barındır.
+# CoffeeTouchScreenAdapterImpl : eski yapıdaki sınıfın bir nesnesini kendine enjekte eder ve bu nesne
+yoluyla eski sınıfın metotları kullanılır.
+# OldCofeeMachine: eski yapıdaki sınıfımızın içeriğini barındırır.
